@@ -11,7 +11,8 @@
 
 <style>
   :root{
-    --bg:#ffffff; --text:#111; --muted:#6b7280; --card:#f7f7f7; --accent:#0a7cff; --border:#e5e7eb;
+    --bg:#ffffff; --text:#111; --muted:#6b7280; --card:#f7f7f7;
+    --accent:#0a7cff; --border:#e5e7eb;
   }
   @media (prefers-color-scheme: dark){
     :root{ --bg:#0b0b0b; --text:#e8e8e8; --muted:#a3a3a3; --card:#141414; --accent:#46a1ff; --border:#2b2b2b;}
@@ -33,14 +34,18 @@
   .brand h1{margin:0; font-size:1.3rem; font-weight:700;}
   nav{margin-left:auto; display:flex; gap:14px;}
   nav a{color:var(--accent); text-decoration:none; font-weight:600;}
+
   .logo{
     width:380px; height:auto; object-fit:contain; border-radius:10px;
   }
+
   .container{
     max-width:1000px; margin:0 auto; padding:20px 16px;
   }
+
   h2{margin:28px 0 10px; font-size:1.6rem;}
   p.lead{color:var(--muted);}
+
   .table-wrap{overflow-x:auto; margin:18px 0;}
   table{width:100%; border-collapse:collapse; font-size:0.95rem;}
   th,td{
@@ -49,6 +54,7 @@
   }
   th{background:var(--card);}
   td a.btn-link{color:var(--accent); font-weight:700; text-decoration:none;}
+
   .product-card{
     background:var(--card); border:1px solid var(--border);
     border-radius:14px; padding:16px; margin:18px 0;
@@ -56,23 +62,40 @@
   .product-flex{
     display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap;
   }
-  .thumb{
-    width:180px; border-radius:12px;
-  }
+  .thumb{width:180px; border-radius:12px;}
   .buy-btn{
     display:inline-block; margin-top:8px;
     background:var(--accent); color:#fff; font-weight:700;
     text-decoration:none; padding:10px 14px; border-radius:10px;
   }
+
   ul.spec{margin:8px 0 0 18px;}
   hr{border:0; border-top:1px solid var(--border); margin:28px 0;}
+
   footer{border-top:1px solid var(--border); padding:18px 16px; color:var(--muted);}
+
   .badge{
     display:inline-block; padding:2px 8px; border-radius:999px;
     font-size:12px; background:#eef6ff; color:#0656c9;
   }
+
+  .disclosure-box{
+    border:1px solid var(--border);
+    background:var(--card);
+    padding:14px 16px;
+    border-radius:12px;
+    margin-top:20px;
+    font-size:0.9rem;
+    color:var(--muted);
+  }
+
+  .guide-list li{
+    margin-bottom:8px;
+    padding-left:6px;
+  }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -172,7 +195,6 @@
 <hr />
 
 <h2>Top 10 Sleep Earbuds — Detailed Reviews</h2>
-
 <!-- 1 -->
 <section class="product-card" id="p1">
   <div class="product-flex">
@@ -229,6 +251,7 @@
     </div>
   </div>
 </section>
+
 <!-- 4 -->
 <section class="product-card" id="p4">
   <div class="product-flex">
@@ -368,11 +391,11 @@
 <h2>Buyer’s Guide: How to Choose Earbuds for Sleep</h2>
 
 <ul>
-  <li><strong>Side-sleeper comfort:</strong> low-profile shells prevent pillow pressure.</li>
-  <li><strong>Noise control:</strong> ANC is best in loud homes; passive seal works for quiet rooms.</li>
-  <li><strong>Battery life:</strong> aim for minimum 6–8 hours single-charge.</li>
-  <li><strong>Controls:</strong> simple tap/hold reduces accidental presses when lying down.</li>
-  <li><strong>Fit options:</strong> foam tips or multiple sizes reduce ear pressure.</li>
+  <li><strong>Side-sleeper comfort:</strong> Look for low-profile shells designed to avoid pillow pressure.</li>
+  <li><strong>Noise control:</strong> ANC for noisy environments; passive seal for quiet rooms.</li>
+  <li><strong>Battery life:</strong> Minimum 6–8 hours single-charge for uninterrupted sleep.</li>
+  <li><strong>Controls:</strong> Simple tap/hold controls avoid accidental touches.</li>
+  <li><strong>Fit options:</strong> Foam tips or multiple sizes improve comfort and seal.</li>
 </ul>
 
 <hr />
@@ -381,14 +404,66 @@
 <h2>FAQ</h2>
 
 <p><strong>Do these work for side sleepers?</strong> Yes — especially #1, #5, #6, and #9.</p>
-<p><strong>ANC or no ANC?</strong> If you need to block HVAC or road noise, ANC helps. Otherwise passive seal works well.</p>
-<p><strong>Affiliate disclosure:</strong> Links use our ID <strong>scconnec0d-20</strong>.</p>
+<p><strong>ANC or no ANC?</strong> Use ANC to block HVAC or road noise. Passive seal works fine for quieter homes.</p>
+
+<!-- Styled Affiliate Disclosure -->
+<div style="background:#eef6ff; padding:14px; border-left:4px solid #0a7cff; border-radius:6px; margin-top:20px;">
+  <p style="margin:0;">
+    <strong>Affiliate Disclosure:</strong> This page uses affiliate links. As an Amazon Associate, we earn from qualifying purchases — at no extra cost to you.
+  </p>
+</div>
 
 </main>
 
 <footer class="container">
   <small>© 2025 SC Connections · Some links are affiliate links (no extra cost to you).</small>
 </footer>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top 10 Sleep Earbuds 2025",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Mini ANC Sleep Earbuds" },
+    { "@type": "ListItem", "position": 2, "name": "Google Pixel Buds Pro 2" },
+    { "@type": "ListItem", "position": 3, "name": "ZYHKON Sleep Earbuds" },
+    { "@type": "ListItem", "position": 4, "name": "Nothing Ear (a)" },
+    { "@type": "ListItem", "position": 5, "name": "LOBKIN Sleep Earbuds" },
+    { "@type": "ListItem", "position": 6, "name": "Invisible Sleep Headphones" },
+    { "@type": "ListItem", "position": 7, "name": "Mudtun Invisible Sleep Earbuds" },
+    { "@type": "ListItem", "position": 8, "name": "Hearprotek Sleep Earbuds" },
+    { "@type": "ListItem", "position": 9, "name": "Houlyn Sleep Earbuds" },
+    { "@type": "ListItem", "position": 10, "name": "Sleepals Micro Sleep Earbuds" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Do these work for side sleepers?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes — especially models #1, #5, #6, and #9."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"ANC or no ANC?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"ANC helps block HVAC and road noise. Passive seal is fine for quiet homes."
+      }
+    }
+  ]
+}
+</script>
 
 </body>
 </html>
